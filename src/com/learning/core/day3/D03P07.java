@@ -5,12 +5,8 @@ import java.util.Scanner;
 public class D03P07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Input String
         System.out.print("Enter a string: ");
         String inputString = scanner.nextLine();
-
-        // Print all subsequences
         System.out.print("Output: ");
         printAllSubsequences(inputString);
     }
