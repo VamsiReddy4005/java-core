@@ -6,11 +6,9 @@ public class D03P09 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Enter the number of strings:");
         int n = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
-
+        scanner.nextLine(); 
         System.out.println("Enter the strings:");
         String[] strings = new String[n];
         for (int i = 0; i < n; i++) {
