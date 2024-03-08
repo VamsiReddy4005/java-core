@@ -5,15 +5,9 @@ import java.util.Scanner;
 public class D03P08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Input String
         System.out.print("Enter a string: ");
         String inputString = scanner.nextLine();
-
-        // Calculate minimum deletions
         int minDeletions = calculateMinDeletions(inputString);
-
-        // Output
         System.out.println("Output: " + minDeletions);
     }
 
@@ -32,7 +26,7 @@ public class D03P08 {
         int n = str.length();
 
         for (int i = 0; i < n; i++) {
-            dp[i][i] = 1; // Each character is a palindrome of length 1
+            dp[i][i] = 1; 
         }
 
         for (int cl = 2; cl <= n; cl++) {
